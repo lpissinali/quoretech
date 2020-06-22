@@ -1,0 +1,54 @@
+.graph {
+  margin-bottom: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.graph-wrap {
+  border-radius: 3px;
+  border: solid @border-width @border-color;
+}
+
+.graph-header {
+  padding: 5px;
+  border-bottom: solid @border-width @border-color;
+  font-size: 9px;
+
+  .title {
+    font-size: 13px;
+    font-family: @font-family-regular;
+
+    span {
+      border: solid 2px lighten(@border-color, 10%);
+      border-radius: 3px;
+      padding: 0 2px;
+    }
+  }
+
+  img {
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  > div {
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.graph-image {
+  padding: 10px 0;
+}
+
+.graph-image__small {
+  padding: 2px 0;
+  border-top: solid @border-width @border-color;
+}

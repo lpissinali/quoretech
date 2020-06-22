@@ -1,0 +1,226 @@
+@font-face {
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-family: rubik-regular;
+}
+@font-face {
+  src: url(../fonts/Rubik-Light.ttf);
+  font-family: rubik-light;
+}
+@page {
+  /*size: 21cm 29.7cm;*/
+  /*margin: 30mm 45mm;*/
+  margin: 45px;
+  size: A4 portrait;
+  font-family: 'rubik-light', sans-serif;
+  font-weight: 300;
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+    font-size: 8px;
+    color: #59595B;
+  }
+  @bottom-right {
+    content: '©2020 - Quoretech SA. - www.quore.tech -All rights reserved - Version 1.0.0 - QuoreOne';
+    font-size: 8px;
+    color: #59595B;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+body {
+  font-family: 'rubik-light', sans-serif;
+  font-weight: 300;
+  font-size: 9.5px;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+.mbn {
+  margin-bottom: 0 !important;
+}
+.mln {
+  margin-left: 0 !important;
+}
+.pln {
+  padding-left: 0 !important;
+}
+h2,
+h3 {
+  font-size: 11px;
+  font-weight: normal;
+  font-family: 'rubik-regular', sans-serif;
+  margin-bottom: 12px;
+}
+h2.light {
+  color: #59595B;
+}
+h3 {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before {
+  content: " ";
+  display: table;
+}
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.col-4 {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 33.33333%;
+}
+table {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0;
+}
+table .label {
+  font-size: 9px;
+  color: #59595B;
+}
+tr,
+td {
+  font-size: 10px;
+  padding: 0;
+}
+.text-right {
+  text-align: right;
+}
+.grid {
+  column-width: 30em;
+  column-gap: 4em;
+  font-size: 10px;
+}
+.grid p {
+  margin-bottom: 15px;
+}
+.sign {
+  float: right;
+  margin: 30px 0;
+  min-width: 160px;
+}
+.sign .name {
+  font-size: 11px;
+  text-align: center;
+  font-family: 'rubik-regular', sans-serif;
+}
+.sign .line {
+  border-bottom: solid 1px #000;
+  margin: 36px 0 5px;
+}
+.sign .number {
+  color: #59595B;
+  margin: 0 5px;
+}
+section {
+  page-break-after: always;
+  overflow: hidden;
+}
+header {
+  border-bottom: 1px solid #C5C5C5;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+header .logo {
+  padding-right: 15px;
+  width: 100px;
+  border-right: 1px solid #C5C5C5;
+}
+.page-header {
+  margin-bottom: 15px;
+}
+.page-header .title {
+  color: #000;
+  letter-spacing: 0.015em;
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+.page-header table {
+  margin-bottom: 0;
+}
+.page-header .info {
+  float: right;
+}
+.page-header .info table td {
+  padding-left: 16px;
+}
+.page-header .info small {
+  font-size: 8px;
+}
+.graph {
+  margin-bottom: 15px;
+}
+.graph img {
+  width: 100%;
+}
+.graph-wrap {
+  border-radius: 3px;
+  border: solid 0.6px #C5C5C5;
+}
+.graph-header {
+  padding: 5px;
+  border-bottom: solid 0.6px #C5C5C5;
+  font-size: 9px;
+}
+.graph-header .title {
+  font-size: 13px;
+  font-family: 'rubik-regular', sans-serif;
+}
+.graph-header .title span {
+  border: solid 2px #dfdfdf;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.graph-header img {
+  width: 7px;
+  height: 7px;
+  margin-right: 2px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.graph-header > div {
+  margin-bottom: 5px;
+}
+.graph-header > div:last-child {
+  margin-bottom: 0;
+}
+.graph-image {
+  padding: 10px 0;
+}
+.graph-image__small {
+  padding: 2px 0;
+  border-top: solid 0.6px #C5C5C5;
+}

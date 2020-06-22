@@ -1,0 +1,179 @@
+@font-face {
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-family: rubik-regular;
+}
+
+@font-face {
+  src: url(../fonts/Rubik-Light.ttf);
+  font-family: rubik-light;
+}
+
+@page {
+  /*size: 21cm 29.7cm;*/
+  /*margin: 30mm 45mm;*/
+  margin: 45px;
+  size: A4 portrait;
+  font-family: @font-family-base;
+  font-weight: 300;
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+    font-size: 8px;
+    color: @color-light;
+  }
+  @bottom-right {
+    content: '©2020 - Quoretech SA. - www.quore.tech -All rights reserved - Version 1.0.0 - QuoreOne';
+    font-size: 8px;
+    color: @color-light;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+body {
+  font-family: @font-family-base;
+  font-weight: 300;
+  font-size: @font-size-base;
+  letter-spacing: 0.03em;
+  color: @color-base;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.mbn {
+  margin-bottom: 0 !important;
+}
+
+.mln {
+  margin-left: 0 !important;
+}
+
+.pln {
+  padding-left: 0 !important;
+}
+
+h2, h3 {
+  font-size: 11px;
+  font-weight: normal;
+  font-family: @font-family-regular;
+  margin-bottom: 12px;
+}
+
+h2.light {
+  color: @color-light;
+}
+
+h3 {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.col-4 {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 33.33333%;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0;
+
+  .label {
+    font-size: 9px;
+    color: @color-light;
+  }
+}
+
+tr, td {
+  font-size: 10px;
+  padding: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.grid {
+  column-width: 30em;
+  column-gap: 4em;
+  font-size: 10px;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+
+.sign {
+  float: right;
+  margin: 30px 0;
+  min-width: 160px;
+
+  .name {
+    font-size: 11px;
+    text-align: center;
+    font-family: @font-family-regular;
+  }
+
+  .line {
+    border-bottom: solid 1px @color-base;
+    margin: 36px 0 5px;
+  }
+
+  .number {
+    color: @color-light;
+    margin: 0 5px;
+  }
+}
+
+section {
+  page-break-after: always;
+  overflow: hidden;
+}
